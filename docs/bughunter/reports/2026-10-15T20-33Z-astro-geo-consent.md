@@ -39,7 +39,7 @@ The Google Tag Platform consent guide recommends setting consent defaults before
 
 ## PR state
 
-PR URL and current head/check state will be recorded in the index after publication and fresh GitHub verification.
+PR: https://github.com/qrati-labs/qrati-connect-astro-example/pull/3. The branch is hosted on the agent fork because the upstream repository ruleset denies direct branch creation. Current head and check state are recorded in the tracker after publication.
 
 ## Sources
 
