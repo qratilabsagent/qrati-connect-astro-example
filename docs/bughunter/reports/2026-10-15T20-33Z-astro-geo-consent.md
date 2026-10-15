@@ -39,7 +39,7 @@ The Google Tag Platform consent guide recommends setting consent defaults before
 
 ## PR state
 
-PR: https://github.com/qrati-labs/qrati-connect-astro-example/pull/3. The branch is hosted on the agent fork because the upstream repository ruleset denies direct branch creation. Current head and check state are recorded in the tracker after publication.
+PR: https://github.com/qrati-labs/qrati-connect-astro-example/pull/3. The branch is hosted on the agent fork because the upstream repository ruleset denies direct branch creation. At 20:36 UTC, GitHub reported head `071b840db243b4f0b77c372192fc6ab1c91d4213`, mergeable, review decision unset, and GitGuardian Security Checks in progress.
 
 ## Sources
 
