@@ -532,7 +532,11 @@ const year = new Date().getFullYear();
           root.classList.toggle('dark', t === 'dark');
           if (btn) btn.textContent = t === 'dark' ? '☀️ Light' : '🌙 Dark';
           if (widget) widget.setAttribute('theme', t);
-          localStorage.setItem('qc-theme', t);
+          try {
+            localStorage.setItem('qc-theme', t);
+          } catch (error) {
+            // Theme persistence is best-effort; storage may be blocked.
+          }
         }
 
         // Sync button label with current theme (set by pre-hydration script)
