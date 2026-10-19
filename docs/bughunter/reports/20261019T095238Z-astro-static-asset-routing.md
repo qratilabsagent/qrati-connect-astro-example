@@ -37,4 +37,4 @@ IST (UTC+05:30): preflight 15:22:39–15:23:03; audit 15:23:12–15:24:52; total
 
 ## Delivery
 
-PR #8: https://github.com/qrati-labs/qrati-connect-astro-example/pull/8. At final readback, it is OPEN and MERGEABLE against `main` at `24e0cc5050b5a737ba4472dd9691353ed8e948c1`; head `4fb945c615cfcb3dbf3e0e55d34748be953f9be2` is published on the authorized `qratilabsagent` fork. Files are this report and `docs/bughunter/INDEX.md`; no closing issue references. At the check snapshot, GitGuardian Security Checks was pending. No merge or deployment.
+PR #8: https://github.com/qrati-labs/qrati-connect-astro-example/pull/8. At final readback, it is OPEN and MERGEABLE against `main` at `24e0cc5050b5a737ba4472dd9691353ed8e948c1`; its feature branch is published on the authorized `qratilabsagent` fork. Files are this report and `docs/bughunter/INDEX.md`; no closing issue references. At the check snapshot, GitGuardian Security Checks was pending. No merge or deployment.
