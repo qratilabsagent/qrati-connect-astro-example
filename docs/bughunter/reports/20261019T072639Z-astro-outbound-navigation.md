@@ -22,10 +22,17 @@ No confirmed defect. No severity assigned. This is a source-level audit: no link
 - Tests, builds, lint, type-check, installs, and package-manager commands: **NOT RUN BY BUGHUNTER**.
 - No external tests or production mutations performed.
 
-## Timing
+## Timing (measured wall-clock)
 
-Measured timing and the phase breakdown will be inserted from the BugHunter timing ledger after finalization; no durations are estimated.
+| Phase | Segment start (UTC) | Segment end (UTC) | Elapsed |
+|---|---|---|---|
+| Preflight | 2026-10-19T07:26:39Z | 2026-10-19T07:27:04Z | 00:00:25 |
+| Audit | 2026-10-19T07:27:16Z | 2026-10-19T07:29:19Z | 00:02:03 |
+| Unclassified interval between marked phases | — | — | 00:00:31 |
+| **Total run** | 2026-10-19T07:26:39Z | 2026-10-19T07:29:38Z | **00:02:59** |
+
+IST (UTC+05:30): preflight 12:56:39–12:57:04; audit 12:57:16–12:59:19; total 12:56:39–12:59:38. The 31-second interval is reported as unclassified, not assigned to either phase.
 
 ## Delivery
 
-A report-only documentation PR will contain this report and the index entry. PR URL, base/head, changed paths, mergeability, closing-issue references, and checks will be recorded after remote readback.
+PR #7: https://github.com/qrati-labs/qrati-connect-astro-example/pull/7. It is a report-only documentation PR; no closing issue references. Initial readback confirmed OPEN, MERGEABLE, base `main` at `24e0cc5050b5a737ba4472dd9691353ed8e948c1`, head `bughunter/20261019T072639Z-e128df1ed57b4dd79fdec2d869cf4e99-audit` at `6097dcd9272af6038322d37bb26af840b669f216`, and the report/index paths. The repository rejected branch creation under its rules, so the feature branch was pushed to the authorized `qratilabsagent` fork. The PR body and final check snapshot are recorded after remote readback.
