@@ -22,10 +22,9 @@ A single `async` script tag mounts the widget where it sits; config travels in
   data-router="hash"></script>
 ```
 
-The example injects that tag immediately (see `src/pages/index.astro`),
-adding `data-uid` / `data-fname` / `data-lname` for the known user. The tag is
-re-injected whenever the user or theme changes, since scripts don't react to
-attribute mutation.
+The Astro page renders a `<qrati-connect>` custom element directly and loads
+the embed script once. It passes the organization ID and synchronizes the theme;
+it does not currently configure a user identity.
 
 ## Run it
 
