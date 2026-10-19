@@ -22,12 +22,19 @@ No confirmed defect in the traced routing configuration or pass-through handler.
 - Issue: none required (no confirmed finding).
 - Tests authored: none; no regression test was indicated by the evidence.
 - Tests, builds, lint, type-check, installs, and package-manager commands: **NOT RUN BY BUGHUNTER**.
-- The only permitted patch-hygiene check, `git diff --check`, will be recorded after documentation edits.
+- `git diff --check` passed. No tests, builds, lint, type-check, installs, or package-manager commands were run.
 
 ## Timing (measured wall-clock)
 
-Timing ledger completion pending; final measured phase table and total will be added after PR verification and `bughunter-timing.py finish`. No duration is estimated or backfilled.
+| Phase | Segment start (UTC) | Segment end (UTC) | Elapsed |
+|---|---|---|---|
+| Preflight | 2026-10-19T09:52:39Z | 2026-10-19T09:53:03Z | 00:00:24 |
+| Audit | 2026-10-19T09:53:12Z | 2026-10-19T09:54:52Z | 00:01:39 |
+| Unclassified interval between marked phases | — | — | 00:00:10 |
+| **Total run** | 2026-10-19T09:52:39Z | 2026-10-19T09:54:52Z | **00:02:13** |
+
+IST (UTC+05:30): preflight 15:22:39–15:23:03; audit 15:23:12–15:24:52; total 15:22:39–15:24:52. The 10-second interval is reported as unclassified, not assigned to either phase.
 
 ## Delivery
 
-PR and checks: pending.
+PR #8: https://github.com/qrati-labs/qrati-connect-astro-example/pull/8. At final readback, it is OPEN and MERGEABLE against `main` at `24e0cc5050b5a737ba4472dd9691353ed8e948c1`; head `4fb945c615cfcb3dbf3e0e55d34748be953f9be2` is published on the authorized `qratilabsagent` fork. Files are this report and `docs/bughunter/INDEX.md`; no closing issue references. At the check snapshot, GitGuardian Security Checks was pending. No merge or deployment.
