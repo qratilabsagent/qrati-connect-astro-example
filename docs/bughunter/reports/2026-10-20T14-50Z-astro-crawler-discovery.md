@@ -21,6 +21,13 @@ No confirmed defect in the traced crawler-discovery configuration. The audit can
 - `git diff --check` is the only permitted patch verification.
 - No issue was needed because no defect was confirmed; no production mutation or deployment occurred.
 
-## Timing (measured)
+## Timing (measured wall-clock)
 
-Timing table to be inserted from the BugHunter timing ledger after audit and initial PR verification; no durations are estimated or backfilled.
+| Phase | Segment start (UTC) | Segment end (UTC) | Elapsed |
+|---|---|---|---|
+| `preflight` | 2026-10-20T14:50:39Z | 2026-10-20T14:51:08Z | 00:00:30 (0.5 min) |
+| `audit` | 2026-10-20T14:51:19Z | 2026-10-20T14:56:29Z | 00:05:10 (5.2 min) |
+| **Total run (preflight start to finish)** | 2026-10-20T14:50:39Z | 2026-10-20T14:56:30Z | **00:05:51 (5.8 min)** |
+| Unclassified interval between marked phases | — | — | 00:00:11 (0.2 min) |
+
+The table is copied from the timer ledger. Timing-table insertion occurs after the measurement snapshot.
